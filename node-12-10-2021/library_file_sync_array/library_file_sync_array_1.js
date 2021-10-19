@@ -38,6 +38,7 @@ switch (operation) {
     fs.writeFileSync("file.json", JSON.stringify(books));
 
     break;
+  case "update":
 
   default:
     break;
