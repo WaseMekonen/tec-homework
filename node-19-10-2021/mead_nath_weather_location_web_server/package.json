@@ -2,7 +2,7 @@
   "name": "mead_nath_weather_location_web_server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.23.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "hbs": "^4.1.2"
   }
 }
