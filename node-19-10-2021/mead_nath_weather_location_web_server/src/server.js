@@ -17,11 +17,11 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicPath));
 
 app.get("/", (req, res) => {
-  res.render("index",{title:"Home"});
+  res.render("index");
 });
 
 app.get("/about", (req, res) => {
-  res.render("index",{title:"about",box:true});
+  res.render("about");
 });
 
 app.get("/help", (req, res) => {

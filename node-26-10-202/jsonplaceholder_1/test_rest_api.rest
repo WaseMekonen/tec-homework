@@ -1,0 +1,15 @@
+GET http://localhost:8080/comments
+###
+GET http://localhost:8080/comments/2534567890
+###
+POST http://localhost:8080/comments/
+content-type: application/json
+
+{
+    "postId": 1,
+    "name": "alias odio sit",
+    "email": "Lew@alysha.tv",
+    "body": "ani ole hadash"
+}
+###
+DELETE http://localhost:8080/comments/5

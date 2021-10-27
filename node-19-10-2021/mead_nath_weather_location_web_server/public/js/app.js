@@ -5,7 +5,7 @@ const cityInput = document.getElementById("city-input");
 document.getElementById("form").addEventListener("submit", cityDisplay);
 
 function cityDisplay(e) {
-    e.preventDefault();
+  e.preventDefault();
   const city = cityInput.value;
 
   axios
@@ -15,9 +15,9 @@ function cityDisplay(e) {
       console.log("it's good");
       if (response.status === 200) {
         console.log(response.data);
-            cityInput.innerHTML=`City: ${response.data.name},
+        cityInput.innerHTML = `City: ${response.data.name},
             Longitude: ${response.data.coord.lon},
-            latitude:${response.data.coord.lat}`
+            latitude:${response.data.coord.lat}`;
         //   res.send(
         //     `City: ${response.data.name},
         //      Longitude: ${response.data.coord.lon},
