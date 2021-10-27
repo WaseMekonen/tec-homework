@@ -1,3 +1,48 @@
-ul{
-    background-color: cornsilk;
+body {
+  text-align: center;
+}
+header {
+  margin-bottom: 34px;
+}
+.main-head {
+  margin-top: 2%;
+  color: black;
+  font-size: 45px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  font-family: system-ui;
+  color: gray;
+  font-size: larger;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 150px;
+}
+
+p {
+  margin-bottom: 37px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: gray;
+}
+.city-input {
+  font-size: larger;
+}
+.location-display {
+  background-color: gray;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 45%;
 }
