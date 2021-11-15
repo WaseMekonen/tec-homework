@@ -1,11 +1,8 @@
-const express = require("express");
-const app = express();
-const PORT = 8080;
-const path = require("path");
-const axios = require("axios");
-const { runInNewContext } = require("vm");
-
-
+const express = require("express"),
+ app = express(),
+ PORT = 8080,
+//  path = require("path"),
+ axios = require("axios");
 app.use(express.json());
 
 // returning cooments by GET method
