@@ -26,9 +26,11 @@
                 model:"impreza",
                 year:2015
             }
-            return <div>
-                <h1>{car.name} {car.model} {car.year}</h1>
-            </div>
+            let arr = []
+            for (let i = 0; i < 9; i++) {
+                   arr.push(<h1>{car.name} {car.model} {car.year}</h1>)  
+                }
+            return arr
         }
         // 3
         function Name(){
@@ -61,7 +63,6 @@
                 <Shalom name="Lauren"/>
                 <Shalom name="Tim"/>
                 </div>
-
         }
         // 7
         function NameAge(props){
@@ -101,7 +102,7 @@
                     <VideoLink videoUrl="https://player.vimeo.com/external/173719869.sd.mp4?s=68dfa0083668d0f4fce0f757e6ae04e47858691e&profile_id=164"/>
                 </div>
         }
-        ReactDOM.render(<div><Video/><Pic/><Header/> <Main/> <Footer/><SayHello/><User/><h1><Hello/></h1><Car/><Car/><Car/><Car/><Car/><Car/><Car/><Car/><Car/><Car/><Name/></div>,domElement);
+        ReactDOM.render(<div><Video/><Pic/><Header/> <Main/> <Footer/><SayHello/><User/><h1><Hello/></h1><Car/><Name/></div>,domElement);
         // 10
                 //  הוא ארגומנט של קומפוננטה הוא מאפשר לאחסן ערך ולהעביר אותו אות לקומפוננטה אחרת   props 
 
