@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <main id="app"></main>
+
+    <script type="text/babel">
+        const domElement = document.getElementById("app")
+
+        // 1
+        function Hello(){
+            return <div> <h1>Hello</h1><Name/></div>
+        }
+        // 2
+        function Car(){
+            const car = {
+                name:"Subaru",
+                model:"impreza",
+                year:2015
+            }
+            return <div>
+                <h1>{car.name} {car.model} {car.year}</h1>
+            </div>
+        }
+        // 3
+        function Name(){
+            return <h1>Wase</h1>
+        }
+        // 5
+        function Header(){
+            return <header>Header</header>
+        }
+        function Main(){
+            return <main>Main</main>
+        }
+        function Footer(){
+        
+            return <footer>Footer</footer>
+        }
+        // 6
+        function Shalom(props){
+            return <h1>Hello,{props.name}</h1>
+        }
+
+        function SayHello(){
+            return <div>
+                <Shalom name="Wase"/>
+                <Shalom name="Avi"/>
+                <Shalom name="Dan"/>
+                <Shalom name="Cohen"/>
+                <Shalom name="Nadav"/>
+                <Shalom name="Kim"/>
+                <Shalom name="Lauren"/>
+                <Shalom name="Tim"/>
+                </div>
+
+        }
+        // 7
+        function NameAge(props){
+            return <h1>{props.name},{props.age}</h1>
+        }
+        function User(){
+            return <div>
+                <NameAge name="Wase" age="27"/>
+                <NameAge name="Rami" age="22"/>
+                <NameAge name="Oren" age="25"/>
+                <NameAge name="Pini" age="24"/>
+                <NameAge name="Lior" age="51"/>
+                <NameAge name="Miki" age="12"/>
+                <NameAge name="Eitan"  age="43"/>
+                <NameAge name="Tamir" age="32"/>
+                </div>
+        }
+        // 8
+        function Link(props){
+           return <img src={props.image} alt=""/>
+        }
+        function Pic(){
+            return <div>
+                <Link image="https://cdn.pixabay.com/photo/2013/07/18/20/26/sea-164989__340.jpg"/>
+                <Link image="https://cdn.pixabay.com/photo/2016/04/18/22/05/seashells-1337565__340.jpg"/>
+                <Link image="https://cdn.pixabay.com/photo/2013/11/01/11/13/dolphin-203875__340.jpg"/>
+                </div>
+        }
+        // 9
+        function VideoLink(props){
+            return <video src={props.videoUrl} controls autoplay></video>
+        }
+        function Video(){
+            return <div>
+                    <VideoLink videoUrl="https://player.vimeo.com/external/447087782.sd.mp4?s=73d1239b094ee615a05b4a24cc7f7767c1ab98a0&profile_id=164"/>
+                    <VideoLink videoUrl="https://player.vimeo.com/external/262921865.sd.mp4?s=d5d5a4fdd51cab68be5a5adbc176656a2ec60020&profile_id=165"/>
+                    <VideoLink videoUrl="https://player.vimeo.com/external/173719869.sd.mp4?s=68dfa0083668d0f4fce0f757e6ae04e47858691e&profile_id=164"/>
+                </div>
+        }
+        ReactDOM.render(<div><Video/><Pic/><Header/> <Main/> <Footer/><SayHello/><User/><h1><Hello/></h1><Car/><Car/><Car/><Car/><Car/><Car/><Car/><Car/><Car/><Car/><Name/></div>,domElement);
+        // 10
+                //  הוא ארגומנט של קומפוננטה הוא מאפשר לאחסן ערך ולהעביר אותו אות לקומפוננטה אחרת   props 
+
+    </script>
+</body>
+</html>
