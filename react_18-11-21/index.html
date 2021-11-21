@@ -15,6 +15,7 @@
     <script type="text/babel">
         const domElement = document.getElementById("app")
 
+
         // 1
         function Hello(){
             return <div> <h1>Hello</h1><Name/></div>
@@ -66,18 +67,18 @@
         }
         // 7
         function NameAge(props){
-            return <h1>{props.name},{props.age}</h1>
+            return <h1>{props.name} {props.age}</h1>
         }
         function User(){
             return <div>
-                <NameAge name="Wase" age="27"/>
-                <NameAge name="Rami" age="22"/>
-                <NameAge name="Oren" age="25"/>
-                <NameAge name="Pini" age="24"/>
-                <NameAge name="Lior" age="51"/>
-                <NameAge name="Miki" age="12"/>
-                <NameAge name="Eitan"  age="43"/>
-                <NameAge name="Tamir" age="32"/>
+                <NameAge name="Wase" age={27}/>
+                <NameAge name="Rami" age={22}/>
+                <NameAge name="Oren" age={25}/>
+                <NameAge name="Pini" age={24}/>
+                <NameAge name="Lior" age={51}/>
+                <NameAge name="Miki" age={12}/>
+                <NameAge name="Eitan"  age={43}/>
+                <NameAge name="Tamir" age={32}/>
                 </div>
         }
         // 8
