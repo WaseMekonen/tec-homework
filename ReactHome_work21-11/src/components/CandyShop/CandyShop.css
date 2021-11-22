@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    width: 97%;
+    height: auto;
+    background-color: #e5e5e5;
+}
+.category{
+    width: 32%;
+    background-color: #877d7dad;
+    margin: 0px 0px 10px 13px;
+    border-radius: 4px;
+}

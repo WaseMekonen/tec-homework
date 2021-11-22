@@ -1,0 +1,42 @@
+.footerContainer{
+    height: 300px;
+    width: 400px;
+    background-color: #625959;
+    margin-top: 28px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26%;
+    margin-left: 25%;
+}
+form{
+    background-color: #809b9b3d;
+    width: 258px;
+    height: 287px;
+    border-radius: 13px;
+}
+
+input[type=text]{
+    width: 196px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+input[type=email]{
+    width: 196px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+label{
+    font-size: 23px;
+}
+textarea{
+    width: 234px;
+    height: 117px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-family: cursive;
+}
