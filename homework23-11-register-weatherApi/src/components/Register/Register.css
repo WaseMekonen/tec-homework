@@ -29,6 +29,9 @@ input {
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
+.register-fullname input{
+  width: 201px;
+}
 .register-imformation{
     display: flex;
     height: 43%;
@@ -53,4 +56,9 @@ form button{
     background-color: #48a048;
     border-radius: 10px;
     color: white;
+}
+button:disabled {
+  background-color: gray;
+  color: #d3d1d5;
+  border: white;
 }

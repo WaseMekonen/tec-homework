@@ -39,7 +39,7 @@ export default class WetherApi extends Component{
                 <h3 >Enter a name of a city</h3>
                 </div>
                 <input className="weatherInput" type="text" name="city" onChange={this.inputHandler} /><br/><br/>
-                <button onClick={this.getWeather}>Submit</button>
+                <button className="weatherButton" onClick={this.getWeather}>Submit</button>
                 <div>
                     <p className={this.state.color} >{this.state.display}</p>
                 </div>

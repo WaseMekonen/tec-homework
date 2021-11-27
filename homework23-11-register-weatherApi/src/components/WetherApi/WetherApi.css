@@ -18,9 +18,9 @@
   border-top-right-radius: 23px;
 }
 .header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .header h1 {
   color: honeydew;
@@ -32,10 +32,18 @@
   margin-top: 2px;
   margin-bottom: 32px;
 }
-.weatherInput{
+.weatherInput {
   width: 42%;
   height: 8%;
   border: none;
   border-radius: 6px;
   font-size: 18px;
+}
+.weatherButton {
+  width: 24%;
+  height: 9%;
+  border-radius: 5px;
+  color: white;
+  background-color: #2ab5ff;
+  border: 1px solid;
 }

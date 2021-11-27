@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.addToDo {
+  height: auto;
+  background-color: #307273;
+  margin: 0px 17%;
+  padding: 10px 0px;
+  border-radius: 23px;
+  box-shadow: #3586ff 4px 3px 8px;
+}
+.inputFiled {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.input {
+  margin-right: 25px;
+  height: 41px;
+  width: 41%;
+  border-radius: 13px;
+  font-size: 23px;
+}
+.add-Button {
+  color: white;
+  width: 7%;
+  border-radius: 7px;
+  background-color: #ff8800;
+  font-size: 19px;
+  cursor: initial;
+}
+.todosList {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 21px;
+}
+.todosList p {
+  font-size: 20px;
+  color: white;
+  font-family: cursive;
+}
+.todosList button {
+  background-color: #fe5151;
+  color: white;
+  border-radius: 12px;
+  height: 30px;
+  width: 66px;
+  margin-left: 159px;
+}
+.todosList input {
+  height: 30px;
+  width: 22px;
+}
