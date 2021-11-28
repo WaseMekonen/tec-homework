@@ -30,7 +30,7 @@ export default class ToDoList extends Component {
 
   deleteToDo = (index) => {
     const newTodos = this.state.todosArr;
-    newTodos.splice(index, 1);
+    newTodos.slice(index, 1);
     this.setState({ todoArr: newTodos });
   };
 
