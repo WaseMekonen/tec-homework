@@ -11,7 +11,7 @@ export default class Register extends Component{
     }
 
     loginValidation = ()=> {
-       return this.state.firstName.length > 5 && this.state.lastName.length > 5 && this.state.password === this.state.confirmPassword
+       return this.state.firstName.length > 1 && this.state.lastName.length > 1 && this.state.password === this.state.confirmPassword
     }
 
     logValues=(e)=>{

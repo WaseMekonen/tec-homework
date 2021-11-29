@@ -3,14 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-form {
+form{
   margin-bottom: 34px;
-  width: 26%;
-  height: 500px;
-  margin-left: 35%;
-  background-color: #d3d1d5;
+  width: 18%;
+  height: 508px;
+  margin-left: 41%;
+  background-color: #ececec;
   border-radius: 23px;
+  box-shadow: #777789 -1px 2px 14px;
 }
+
 input {
   height: 42px;
   border-radius: 8px;
@@ -18,25 +20,25 @@ input {
 
 }
 .register-header h1 {
-  margin-bottom: 4px;
+  margin-bottom: 23px;
 }
 .register-header span {
   font-size: 14px;
 }
 .register-fullname {
-    margin: 20px 10px 10px 10px;
+    margin: 24px 14px 12px 12px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
 .register-fullname input{
-  width: 201px;
+  width: 189px;
 }
 .register-imformation{
     display: flex;
     height: 43%;
-    margin: 12px;
-    margin-bottom: 28px;
+    margin: 20px;
+    margin-bottom: 9px;
     flex-direction: column;
     justify-content: space-around;
 } 
@@ -45,7 +47,7 @@ input {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 18px;
+    
 }
 .register-terms label{
     margin-left: 4%;
