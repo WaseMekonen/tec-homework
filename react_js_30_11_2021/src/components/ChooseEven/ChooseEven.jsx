@@ -5,14 +5,13 @@ export default class ChooseEven extends Component {
     numbers: [],
     userTime: 0,
     seconds: 0,
-    startGameButton: false,
   };
 
   countEven = 0;
   userID = null;
 
   componentDidMount() {
-    this.startGame;
+    this.startGame();
   }
 
   restartGame = () => {
