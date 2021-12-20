@@ -2,21 +2,20 @@ import React, { useEffect, useState } from "react";
 
 const RedditJs = ({ topic }) => {
   const [posts, setposts] = useState([]);
+  useEffect(getPosts, [topic]);
 
-  const getPosts = () => {
+  function getPosts() {
     const URL = `https://www.reddit.com/r/${topic}.json`;
     fetch(URL)
       .then((response) => response.json())
       .then((response) => {
-        let PostArr = response.data.children;
-        setposts(PostArr);
+        let PostsArr = response.data.children;
+        setposts(PostsArr);
       })
       .catch((err) => {
         console.error(err);
       });
-  };
-
-  useEffect(getPosts);
+  }
 
   const postElement = posts.map((post, index) => {
     return <li key={index}>{post.data.title}</li>;

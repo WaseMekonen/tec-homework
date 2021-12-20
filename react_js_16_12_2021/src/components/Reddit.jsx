@@ -3,12 +3,15 @@ import React, { useEffect, useState } from "react";
 const Reddit = () => {
   const [posts, setPosts] = useState([]);
 
-  const getPostFromReddit = () => {
+  useEffect(getPostFromReddit, []);
+
+
+  function getPostFromReddit ()  {
     const URL = "https://www.reddit.com/r/reactjs.json";
     fetch(URL)
       .then((response) => response.json())
       .then((response) => {
-        console.log(response.data.children);
+        // console.log(response.data.children);
         const redditReactPosts = response.data.children;
         setPosts(redditReactPosts);
       })
@@ -17,9 +20,8 @@ const Reddit = () => {
       });
   };
 
-  useEffect(getPostFromReddit, []);
 
-  const element = posts.map((post,index) => {
+  const elements = posts.map((post,index) => {
     return <li key={index}>{post.data.title}</li>;
   });
 
@@ -27,7 +29,7 @@ const Reddit = () => {
     <div>
       <h1>Reddit</h1>
       <h3>React-Js Posts</h3>
-      <ol>{element}</ol>
+      <ol>{elements}</ol>
     </div>
   );
 };
