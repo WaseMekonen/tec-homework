@@ -4,19 +4,19 @@ import Counter from "./Counter";
 import Date from "./Date";
 
 function App() {
-  const [userInput, setUserInput] = useState(0);
+  const [initialCount, setInitialCount] = useState(0);
   return (
     <div className="App">
       <input
         type="number"
         placeholder="Insert a number"
         onChange={(e) => {
-          setUserInput(e.target.value);
+          setInitialCount(e.target.value);
         }}
       />
-      <Counter userInput={Number(userInput)} />
+      <Counter initialCount={Number(initialCount)} />
       <hr />
-      <Date/>
+      <Date />
     </div>
   );
 }
